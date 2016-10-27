@@ -26,6 +26,10 @@ which should be supported by modern Linux distributions. Several different utili
 
 If your distribution does not support SSP, or if you have problems pairing with SSP, you can try disabling it with ``hciconfig hci0 sspmode 0``. [See this note on a Logitech keyboard](https://wiki.archlinux.org/index.php/Bluetooth#Logitech_keyboard_does_not_pair).
 
+If you need to use the `hcidump` utility, in Debian-based systems this
+is usually not in the standard packages but in a separate
+`bluez-hcidump` package.
+
 ### bluetoothctl
 
 Pairing can be done with the ``pair`` command. You should be prompted for the PIN code to type
